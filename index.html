@@ -1,17 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="lv">
 <head>
   <meta charset="UTF-8">
-  <title>Kontrolējams kvadrāts</title>
+  <title>Kontrolējams kvadrāts un lācis</title>
   <style>
     canvas {
       border: 1px solid black;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .info {
+      font-family: Arial, sans-serif;
+    }
+    img {
+      width: 300px;
+      height: auto;
+      border: 2px solid #333;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
   <canvas id="myCanvas" width="400" height="400"></canvas>
+
+  <div class="info">
+    <h2>Informācija par lāci</h2>
+    <p>Lācis ir liels plēsējs, kas dzīvo mežos. Latvijā sastopams brūnais lācis. Tie ir stipri, prasmīgi peldētāji un var ātri skriet.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ursus_arctos_-_01.jpg/640px-Ursus_arctos_-_01.jpg" alt="Brūnais lācis">
+  </div>
 
   <script>
     const canvas = document.getElementById('myCanvas');
@@ -65,3 +81,4 @@
   </script>
 </body>
 </html>
+
